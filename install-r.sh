@@ -8,3 +8,6 @@
 `which sudo` apt-fast install -yq r-rig 
 
 rig add
+
+# Install radian
+pip3 install -U radian
