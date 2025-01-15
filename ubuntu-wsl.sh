@@ -41,12 +41,8 @@ ChallengeResponseAuthentication no
 PermitEmptyPasswords no
 PermitRootLogin no
 EOF
-# broken because WSL doesn't yet support systemd
-# Support was just added, but not yet out of preview
-# see here for details:
-# https://ubuntu.com/blog/ubuntu-wsl-enable-systemd
-#
-#systemctl reload ssh
-service ssh restart
+
+systemctl reload ssh
+#service ssh restart
 
 python -m pip install pip -Uq
