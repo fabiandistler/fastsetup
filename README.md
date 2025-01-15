@@ -12,7 +12,7 @@ sudo ./ubuntu-initial.sh
 # If you're using WSL (Windows) use `sudo ./ubuntu-wsl.sh` instead of the above line
 ```
 
-Then, optionally, set up [dotfiles](https://github.com/fastai/dotfiles):
+Then, optionally, set up [dotfiles](https://github.com/fabiandistler/dotfiles):
 
     source dotfiles.sh
 
