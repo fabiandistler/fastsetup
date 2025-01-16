@@ -9,5 +9,4 @@
 
 rig add
 
-# Install radian
-pip3 install -U radian
+
