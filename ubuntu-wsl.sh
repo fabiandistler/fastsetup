@@ -42,7 +42,7 @@ PermitEmptyPasswords no
 PermitRootLogin no
 EOF
 
-systemctl reload ssh
+#systemctl reload ssh
 #service ssh restart
 
-python -m pip install pip -Uq
+#python -m pip install pip -Uq
