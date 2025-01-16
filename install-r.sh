@@ -12,4 +12,6 @@ rig add
 # Add common R systems deps
 sudo apt-fast install -yq libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev cargo libfontconfig1-dev libcairo2-dev
 
+sudo apt -qy autoremove
+
 
