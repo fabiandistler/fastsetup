@@ -22,3 +22,10 @@ source setup-conda.sh
 conda install -yq mamba
 ```
 
+...and set up R with rig:
+
+```
+source install-r.sh
+. ~/.bashrc
+```
+
