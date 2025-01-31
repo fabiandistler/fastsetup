@@ -11,6 +11,7 @@ fi
 echo 'Defaults        timestamp_timeout=3600' >> /etc/sudoers
 
 mkdir /root/.gnupg
+mkdir git
 chmod 700 /root/.gnupg/
 gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/apt-fast-keyring.gpg --keyserver keyserver.ubuntu.com --recv-keys 1EE2FF37CA8DA16B
 chmod go+r /usr/share/keyrings/apt-fast-keyring.gpg
