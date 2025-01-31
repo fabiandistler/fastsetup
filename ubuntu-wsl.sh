@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Exit script on any error
-set -e
+# Save bash
+set -Eeuo pipefail
 
 # Function to display error message and exit
 fail () { echo $1 >&2; exit 1; }
