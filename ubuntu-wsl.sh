@@ -20,7 +20,7 @@ echo 'Defaults        timestamp_timeout=3600' >> /etc/sudoers
 
 # Create necessary directories and set permissions
 mkdir /root/.gnupg
-mkdir git && touch /git/repos
+mkdir ~/git && touch ~/git/repos
 chmod 700 /root/.gnupg/
 
 # Import GPG key for apt-fast
