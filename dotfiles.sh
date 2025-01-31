@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
 cd
 shopt -s expand_aliases
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
