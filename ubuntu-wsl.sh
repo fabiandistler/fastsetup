@@ -58,18 +58,3 @@ apt-fast -qy install vim-nox python3-powerline rsync ubuntu-drivers-common pytho
 env DEBIAN_FRONTEND=noninteractive APT_LISTCHANGES_FRONTEND=mail apt-fast full-upgrade -qy -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold'
 sudo apt -qy autoremove
 
-# Configure SSH to disallow password authentication
-perl -ni.bak -e 'print unless /^\s*(PermitEmptyPasswords|PermitRootLogin|PasswordAuthentication|ChallengeResponseAuthentication)/' /etc/ssh/sshd_config
-cat << 'EOF' >> /etc/ssh/sshd_config
-PasswordAuthentication no
-ChallengeResponseAuthentication no
-PermitEmptyPasswords no
-PermitRootLogin no
-EOF
-
-# Uncomment the following lines to reload or restart SSH service
-#systemctl reload ssh
-#service ssh restart
-
-# Uncomment the following line to upgrade pip
-#python -m pip install pip -Uq
