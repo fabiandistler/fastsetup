@@ -23,6 +23,12 @@ Set up bash-it:
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
+# Autocompletion
+bash-it enable completion conda defaults docker git github-cli makefile pip pip3 pipenv pipx tmux
+
+# Plug ins
+bash-it enable plugin alias-completion colors direnv docker explain extract fzf man pyenv python ssh sudo tmux tmuxinator virtualenv
+
 echo "source .bashrc.local" >> ~/.bashrc
 ```
 
