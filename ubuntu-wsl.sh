@@ -56,9 +56,8 @@ sudo cp logrotate.conf /etc/
 apt-fast -qy install python3
 apt-fast -qy install rsync ubuntu-drivers-common python3-pip ack lsyncd ca-certificates build-essential \
   software-properties-common libglib2.0-dev zlib1g-dev lsb-release htop exuberant-ctags openssh-client python-is-python3 \
-  dos2unix gh bash-completion ubuntu-release-upgrader-core unattended-upgrades \
-   cron tldr bat parallel fzf
-  #opensmtpd mailutils bzip2 pigz ufw
+  dos2unix gh bash-completion ubuntu-release-upgrader-core unattended-upgrades pigz cron tldr bat parallel fzf
+  #opensmtpd mailutils bzip2 ufw
 
 # Perform a full system upgrade
 env DEBIAN_FRONTEND=noninteractive APT_LISTCHANGES_FRONTEND=mail apt-fast full-upgrade -qy -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold'
