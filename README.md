@@ -8,6 +8,9 @@ sudo apt update && sudo apt -y install git
 git clone https://github.com/fabiandistler/fastsetup.git
 cd fastsetup
 sudo ./ubuntu-wsl.sh
+
+# Automatic updates
+sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
 Then, optionally, set up [dotfiles](https://github.com/fabiandistler/dotfiles):
