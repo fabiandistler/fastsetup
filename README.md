@@ -15,9 +15,17 @@ Then, optionally, set up [dotfiles](https://github.com/fabiandistler/dotfiles):
     source dotfiles.sh
 
 Set up bash-it:
+
 ```
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
+```
+
+...and set up R with rig:
+
+```
+source install-r.sh
+. ~/.bashrc
 ```
 
 ...and set up conda:
@@ -28,12 +36,7 @@ source setup-conda.sh
 conda install -yq mamba
 ```
 
-...and set up R with rig:
 
-```
-source install-r.sh
-. ~/.bashrc
-```
 
 Set up pet as snippet manager:
 
