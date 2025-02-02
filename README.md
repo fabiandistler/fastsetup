@@ -14,6 +14,12 @@ Then, optionally, set up [dotfiles](https://github.com/fabiandistler/dotfiles):
 
     source dotfiles.sh
 
+Set up bash-it:
+```
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+```
+
 ...and set up conda:
 
 ```
@@ -28,4 +34,13 @@ conda install -yq mamba
 source install-r.sh
 . ~/.bashrc
 ```
+
+Set up pet as snippet manager:
+
+```
+gh release download --repo knqyf263/pet --pattern "*linux_amd64.deb"
+sudo dpkg -i *linux_amd64.deb
+# Set up gist sync with pet configure
+```
+
 
