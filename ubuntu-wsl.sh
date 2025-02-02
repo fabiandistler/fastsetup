@@ -49,6 +49,9 @@ apt-get -qy install apt-fast
 cp apt-fast.conf /etc/
 chown root:root /etc/apt-fast.conf
 
+# Copy logrotate.conf to /etc/
+sudo cp logrotate.conf /etc/
+
 # Install necessary packages using apt-fast
 apt-fast -qy install python3
 apt-fast -qy install vim-nox python3-powerline rsync ubuntu-drivers-common python3-pip ack lsyncd bzip2 ca-certificates build-essential \
